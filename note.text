@@ -1,3 +1,10 @@
 1 = npm init -y => install package.json
 
 2 = npm i express
+
+3 =npm i nodemon --save-dev
+4 = nodemon index.js
+5 = npm i socket.io
+
+
+=> socket.io site => client api => 
