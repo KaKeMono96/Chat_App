@@ -18,8 +18,11 @@ app.get("/", (res, req) => {
 
 // socket setup
 
-let io=socket(server)
-io.on('connection',(socket)=>{
-    console.log('socket connection connected');
-})
+let io = socket(server);
+io.on('connection',(socket) => {
+    socket.on('chat', (data) => {
+        io.sockets.emit("chat", data);
+
+    });
+});
 
