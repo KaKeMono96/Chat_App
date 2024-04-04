@@ -13,7 +13,7 @@ let server = app.listen(4000, () => {
 
 // route setup
 app.get("/", (res, req) => {
-    req.sendFile(__dirname + "/public/index.html");
+    req.sendFile(__dirname + "/index.html");
 })
 
 // socket setup
